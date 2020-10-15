@@ -1,15 +1,17 @@
 import React from "react";
-import './toastContainer.scss';
-import {Icon} from "@material-ui/core";
+import ToastMessage from "../ToastMessage/ToastMessage";
+import ToastIcon from "../ToastIcon/ToastIcon";
 import PropTypes from 'prop-types';
+import './toastContainer.scss';
+import CloseButton from "../CloseButton/CloseButton";
 
-const ToastContainer = ({ type = "success", message="This is a success message!" }) => {
+const ToastContainer = ({ type, message }) => {
     return (
         <div className="toast-container">
             <div className="content-wrapper">
-                <div className="text-wrapper">
-                    <div className="message">{message}</div>
-                </div>
+                <ToastIcon type={type} />
+                <ToastMessage message={message} />
+                <CloseButton />
             </div>
         </div>
     );
@@ -18,6 +20,6 @@ const ToastContainer = ({ type = "success", message="This is a success message!"
 export default ToastContainer;
 
 ToastContainer.propTypes = {
-    type: PropTypes.string,
-    message: PropTypes.string
+    type: PropTypes.string.isRequired,
+    message: PropTypes.string.isRequired
 };
