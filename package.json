@@ -1,6 +1,7 @@
 {
   "name": "react-toastification",
   "version": "0.1.0",
+  "description": "React toast-notifications made easy!",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.15.1",
