@@ -9,7 +9,7 @@ const App = () => {
     return (
         <div className="app">
             {
-                showToast && <ToastContainer />
+                showToast && <ToastContainer type="success" message="This is a success message!" />
             }
             <Button variant="contained" color="primary" onClick={() => {
               setShowToast(true);
