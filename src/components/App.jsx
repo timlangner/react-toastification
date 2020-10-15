@@ -4,7 +4,7 @@ import ToastContainer from "./ToastContainer/ToastContainer";
 import './app.scss';
 
 const App = () => {
-    const [showToast, setShowToast] = useState(true);
+    const [showToast, setShowToast] = useState(false);
 
     return (
         <div className="app">
