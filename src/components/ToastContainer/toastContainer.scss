@@ -7,6 +7,12 @@
   -webkit-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.4);
   -moz-box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.4);
   box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.4);
+  animation: bounceIn 1s;
+
+  @keyframes bounceIn {
+    0% { transform: translate(-1000%, 0); }
+    100% { transform: translate(0%, 0); }
+  }
 
   .content-wrapper {
     //background-color: orange;
