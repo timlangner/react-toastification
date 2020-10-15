@@ -9,7 +9,7 @@
   box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.4);
 
   .content-wrapper {
-    background-color: orange;
+    //background-color: orange;
     width: 95%;
     top: 50%;
     left: 50%;
@@ -17,7 +17,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: space-evenly;
     margin: 0 auto;
     position: absolute;
+
+    .status-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
   }
 }

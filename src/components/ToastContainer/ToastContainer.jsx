@@ -9,8 +9,10 @@ const ToastContainer = ({ type, message }) => {
     return (
         <div className="toast-container">
             <div className="content-wrapper">
-                <ToastIcon type={type} />
-                <ToastMessage message={message} />
+                <div className="status-wrapper">
+                    <ToastIcon type={type} />
+                    <ToastMessage message={message} />
+                </div>
                 <CloseButton />
             </div>
         </div>
