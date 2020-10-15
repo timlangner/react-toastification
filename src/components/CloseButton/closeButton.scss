@@ -1,0 +1,13 @@
+.button-wrapper {
+  //background-color: grey;
+
+  .button {
+    color: white;
+    height: 20px;
+    width: 20px;
+  }
+
+  .button:hover {
+    cursor: pointer;
+  }
+}
