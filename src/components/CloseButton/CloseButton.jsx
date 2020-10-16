@@ -4,14 +4,14 @@ import { faTimes } from "@fortawesome/pro-light-svg-icons";
 import PropTypes from 'prop-types';
 import './closeButton.scss';
 
-const CloseButton = ({ setShowToast, setAnimation }) => {
+const CloseButton = ({ setShowToast }) => {
+
     return (
         <div className="button-wrapper">
             <FontAwesomeIcon icon={faTimes} className="button" onClick={() => {
-                setAnimation(1);
                 setTimeout(() => {
                     setShowToast(false);
-                }, 1000)
+                }, 1)
             }}/>
         </div>
     );
@@ -20,7 +20,6 @@ const CloseButton = ({ setShowToast, setAnimation }) => {
 export default CloseButton;
 
 CloseButton.propTypes = {
-    setShowToast: PropTypes.func.isRequired,
-    setAnimation: PropTypes.func.isRequired
+    setShowToast: PropTypes.func.isRequired
 };
 
