@@ -24,7 +24,7 @@ const ToastIcon = ({ type }) => {
             default:
                 setIconType(faInfoCircle);
         }
-    }, []);
+    }, [type]);
 
     return (
         <div className="icon-wrapper">
