@@ -1,9 +1,19 @@
 {
   "name": "react-toastification",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "description": "Easy and customizable toast-notifications with React.",
+  "main": "./lib/Toast.js",
   "private": false,
+  "license": "MIT",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack"
+  },
   "dependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.1",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.1",
     "@fortawesome/fontawesome-pro": "^5.15.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -15,20 +25,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "babel-loader": "^8.1.0",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-scripts": "3.4.3",
+    "webpack-cli": "^4.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
+  "devDependencies": {
+    "css-loader": "^5.0.0",
+    "cssnano": "^4.1.10",
+    "mini-css-extract-plugin": "^1.0.0",
+    "postcss-loader": "^4.0.4",
+    "sass-loader": "^10.0.3",
+    "style-loader": "^2.0.0"
   },
   "browserslist": {
     "production": [
