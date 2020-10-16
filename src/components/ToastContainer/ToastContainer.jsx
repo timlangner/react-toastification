@@ -9,7 +9,7 @@ const ToastContainer = ({ type, message, setShowToast }) => {
     const [animation, setAnimation] = useState(0);
 
     return (
-        <div className="toast-container" style={animation === 1 ? { animation: 'bounceOut 1s' } : { animation: 'bounceIn 1s' }}>
+        <div className={`toast-container ${type}`} style={animation === 1 ? { animation: 'bounceOut 1s' } : { animation: 'bounceIn 1s' }}>
             <div className="content-wrapper">
                 <div className="status-wrapper">
                     <ToastIcon type={type} />
