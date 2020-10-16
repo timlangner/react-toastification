@@ -2,7 +2,7 @@
   "name": "react-toastification",
   "version": "0.1.0",
   "description": "Easy and customizable toast-notifications with React.",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-pro": "^5.15.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
