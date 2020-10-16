@@ -2,6 +2,10 @@
     position: absolute;
 }
 
+.toast--hide {
+    display: none;
+}
+
 .top-right {
     top: 12px;
     right: 12px;
@@ -33,7 +37,7 @@
 
 @keyframes toast-in-right {
     from {
-        transform: translateX(100%);
+        transform: translateX(200%);
 
     }
     to {
