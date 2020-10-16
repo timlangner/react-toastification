@@ -9,7 +9,7 @@ const Toast = ({ type, message, position, timeout }) => {
      setTimeout(() => {
        setToastOut(true);
      }, timeout)
-   }, []);
+   }, [timeout]);
 
   return (
     <div className={!toastOut ? `toast ${position}` : `toast toast-${position}--hide`}>
