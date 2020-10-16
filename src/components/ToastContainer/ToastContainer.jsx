@@ -5,7 +5,7 @@ import ToastIcon from "../ToastIcon/ToastIcon";
 import ToastMessage from "../ToastMessage/ToastMessage";
 import './toastContainer.scss';
 
-const ToastContainer = ({ type, message, setShowToast }) => {
+const ToastContainer = ({ type, message, setToastOut }) => {
 
     return (
         <div className={`toast-container ${type}`}>
@@ -14,7 +14,7 @@ const ToastContainer = ({ type, message, setShowToast }) => {
                     <ToastIcon type={type} />
                     <ToastMessage message={message} />
                 </div>
-                <CloseButton setShowToast={setShowToast} />
+                <CloseButton setToastOut={setToastOut} />
             </div>
         </div>
     );
@@ -25,5 +25,5 @@ export default ToastContainer;
 ToastContainer.propTypes = {
     type: PropTypes.string.isRequired,
     message: PropTypes.string.isRequired,
-    setShowToast: PropTypes.func.isRequired
+    setToastOut: PropTypes.func.isRequired
 };
