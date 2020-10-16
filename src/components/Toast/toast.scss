@@ -1,35 +1,60 @@
 .toast {
     position: absolute;
+    opacity: 1;
 }
 
-.toast--hide {
-    display: none;
+.toast-top-right--hide {
+    top: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity .7s ease-out;
+}
+
+.toast-top-left--hide {
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity .7s ease-out;
+}
+
+.toast-bottom-right--hide {
+    bottom: 10px;
+    right: 10px;
+    opacity: 0;
+    transition: opacity .7s ease-out;
+}
+
+.toast-bottom-left--hide {
+    bottom: 10px;
+    left: 10px;
+    opacity: 0;
+    transition: opacity .7s ease-out;
 }
 
 .top-right {
-    top: 12px;
-    right: 12px;
+    top: 10px;
+    right: 10px;
     transition: transform .6s ease-in-out;
     animation: toast-in-right .7s;
 }
 
 .bottom-right {
-    bottom: 12px;
-    right: 12px;
+    bottom: 10px;
+    right: 10px;
     transition: transform .6s ease-in-out;
     animation: toast-in-right .7s;
 }
 
 .top-left {
-    top: 12px;
-    left: 12px;
+    top: 10px;
+    left: 10px;
     transition: transform .6s ease-in;
     animation: toast-in-left .7s;
 }
 
 .bottom-left {
-    bottom: 12px;
-    left: 12px;
+    bottom: 10px;
+    left: 10px;
     transition: transform .6s ease-in;
     animation: toast-in-left .7s;
 }
