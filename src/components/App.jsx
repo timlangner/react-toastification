@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import {Button} from "@material-ui/core";
-import ToastContainer from "./ToastContainer/ToastContainer";
+import { Button } from "@material-ui/core";
+import React, { useState } from 'react';
 import './app.scss';
+import Toast from './Toast/Toast';
 
 const App = () => {
     const [showToast, setShowToast] = useState(true);
@@ -9,7 +9,7 @@ const App = () => {
     return (
         <div className="app">
             {
-                showToast && <ToastContainer type="info" message="This is an info message!" setShowToast={setShowToast} />
+                showToast && <Toast type="info" message="This is an info message!" position="bottom-left" setShowToast={setShowToast} />
             }
             <Button variant="contained" color="primary" onClick={() => {
               setShowToast(true);
