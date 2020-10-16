@@ -4,12 +4,12 @@ import ToastContainer from "./ToastContainer/ToastContainer";
 import './app.scss';
 
 const App = () => {
-    const [showToast, setShowToast] = useState(false);
+    const [showToast, setShowToast] = useState(true);
 
     return (
         <div className="app">
             {
-                showToast && <ToastContainer type="success" message="This is a success message!" />
+                showToast && <ToastContainer type="info" message="This is an info message!" setShowToast={setShowToast} />
             }
             <Button variant="contained" color="primary" onClick={() => {
               setShowToast(true);
