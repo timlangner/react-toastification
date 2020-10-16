@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import React from "react";
-import CloseButton from "../CloseButton/CloseButton";
-import ToastIcon from "../ToastIcon/ToastIcon";
-import ToastMessage from "../ToastMessage/ToastMessage";
+import CloseButton from "../CloseButton/CloseButton.jsx";
+import ToastIcon from "../ToastIcon/ToastIcon.jsx";
+import ToastMessage from "../ToastMessage/ToastMessage.jsx";
 import './toastContainer.scss';
 
 const ToastContainer = ({ type, message, setToastOut }) => {

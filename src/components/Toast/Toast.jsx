@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import React, {useEffect, useState} from "react";
-import ToastContainer from "./ToastContainer/ToastContainer";
+import ToastContainer from "./ToastContainer/ToastContainer.jsx";
 import "./toast.scss";
 
 const Toast = ({ type, message, position, timeout }) => {
