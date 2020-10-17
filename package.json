@@ -1,6 +1,6 @@
 {
   "name": "react-toastification",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Easy and customizable toast-notifications with React.",
   "main": "./lib/Toast.js",
   "private": false,
