@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React, {useState, useEffect} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { faInfoCircle, faCheckCircle, faExclamationCircle, faTimesCircle } from "@fortawesome/pro-light-svg-icons";
+import { faInfoCircle, faCheckCircle, faExclamationCircle, faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import './toastIcon.scss';
 
 const ToastIcon = ({ type }) => {
