@@ -3,6 +3,10 @@
 #Jetbrains
 /.idea
 
+#Parcel
+/.cache
+dist
+
 # dependencies
 /node_modules
 /.pnp
