@@ -17,7 +17,8 @@
   "author": "Tim Langner <tim.langner0@gmail.com>",
   "scripts": {
     "start": "react-scripts start",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@babel/runtime": "^7.12.1",
