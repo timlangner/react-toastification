@@ -16,7 +16,7 @@
   "license": "MIT",
   "author": "Tim Langner <tim.langner0@gmail.com>",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "parcel public/index.html",
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
   },
@@ -39,21 +39,16 @@
     "@rollup/plugin-babel": "^5.2.1",
     "@rollup/plugin-commonjs": "^15.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
-    "babel-loader": "^8.1.0",
-    "css-loader": "^5.0.0",
+    "cross-env": "^7.0.2",
     "cssnano": "^4.1.10",
-    "mini-css-extract-plugin": "^1.0.0",
     "node-sass": "^4.14.1",
-    "postcss-loader": "^4.0.4",
+    "parcel": "^1.12.4",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-scripts": "^3.4.3",
     "rollup": "^2.32.0",
     "rollup-plugin-auto-external": "^2.0.0",
-    "rollup-plugin-postcss": "^3.1.8",
-    "sass-loader": "^10.0.3",
-    "style-loader": "^2.0.0",
-    "webpack-cli": "^4.0.0"
+    "rollup-plugin-postcss": "^3.1.8"
   },
   "browserslist": {
     "production": [
