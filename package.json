@@ -2,10 +2,19 @@
   "name": "react-toastification",
   "version": "1.1.0",
   "description": "Easy and customizable toast-notifications with React.",
+  "homepage": "https://github.com/timlangner/react-toastification#readme",
+  "bugs": {
+    "url": "https://github.com/timlangner/react-toastification/issues"
+  },
   "main": "./build/Toast.js",
   "module": "./build/Toast.esm.js",
   "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/timlangner/react-toastification.git"
+  },
   "license": "MIT",
+  "author": "Tim Langner <tim.langner0@gmail.com>",
   "scripts": {
     "start": "react-scripts start",
     "build": "rollup -c"
